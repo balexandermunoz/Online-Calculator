@@ -120,12 +120,13 @@ function Operate(num1,op,num2){
 
 // Scientific button (Show and hide scientific options)
 let scientificButton = document.querySelector('.scientificBtn');
+let buttonsContainer = document.querySelector('.buttons-container2');
+buttonsContainer.style.display = "none"; //By default
 scientificButton.addEventListener('click',ShowScientific);
 function ShowScientific() {
-    var x = document.querySelector('.buttons-container2')
-    if (x.style.display === "none") {
-      x.style.display = "grid";
+    if (buttonsContainer.style.display === "none") {
+        buttonsContainer.style.display = "grid";
     } else {
-      x.style.display = "none";
+        buttonsContainer.style.display = "none";
     }
   }
