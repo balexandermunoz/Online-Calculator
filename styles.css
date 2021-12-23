@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url('https://ak.picdn.net/shutterstock/videos/19625323/thumb/1.jpg');
+    background-size: cover;
+    opacity: 1;
+}
+
+.calculator {
+    padding: 40px 20px;
+    margin: 20px;
+    background-color: rgba(202, 202, 202, 0.9);
+
+    border-radius: 10%;
+}
+
+/*Computers and laptops*/
+@media only screen and (min-width: 600px) {
+
+    .buttons-container{
+        grid-template-columns: repeat(5,10vh);
+        grid-template-rows: repeat(4,10vh);
+    }
+    .buttons-container2{
+        margin: 0 15px;
+        display: grid;
+        grid-template-columns: repeat(3,10vh);
+        grid-template-rows: repeat(4,10vh);
+    }
+
+    .buttons{
+        display: flex;
+        flex-direction: row;
+    }
+ }
+
+ /*Cellphones*/
+ @media only screen and (max-width: 600px) {
+    .buttons-container{
+        grid-template-columns: repeat(5,8vh);
+        grid-template-rows: repeat(4,10vh);
+    }
+
+    .buttons-container2{
+        margin: 15px 0;
+        display: grid;
+        grid-template-columns: repeat(5,8vh);
+        grid-template-rows: repeat(2,10vh);
+    }
+
+    .buttons{
+        display: flex;
+        flex-direction: column;
+    }
+ }
+
+.display{
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0 10px 30px 10px;
+    padding: 15px;
+    min-height: 15px;
+    border-radius: 10px;
+}
+
+.buttons-container, .buttons-container2{
+    display: grid;
+    grid-row-gap: 10px;
+    grid-column-gap: 5px;
+
+    justify-content:  center;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+    border: groove black;
+    border-radius: 12%;
+}
+
+.scientificBtn{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.scientificBtn .button{
+    margin-top: 10px;
+    font-size: 10px;
+    width: 60px;
+}
+
+.button:hover {
+    background-color: rgba(202, 202, 202, 0.582);
+    cursor: pointer;
+    color: rebeccapurple;
+}
+
+
+/* Style all social media icons */
+.Firma {
+    font-weight: bolder;
+    background-color: rgb(250, 250, 250,0.7);
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.fa {
+    padding: 5px;
+    font-size: 30px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+  .fa-github{
+    background: gray;
+    color: white;
+  }
+
