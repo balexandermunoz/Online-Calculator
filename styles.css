@@ -28,7 +28,7 @@ body {
     }
     .buttons-container2{
         margin: 0 15px;
-        display: grid;
+        display: none;
         grid-template-columns: repeat(3,10vh);
         grid-template-rows: repeat(4,10vh);
     }
@@ -48,7 +48,7 @@ body {
 
     .buttons-container2{
         margin: 15px 0;
-        display: grid;
+        display: none;
         grid-template-columns: repeat(5,8vh);
         grid-template-rows: repeat(2,10vh);
     }
